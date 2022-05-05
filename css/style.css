@@ -1,1 +1,72 @@
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial;
+  }
+  body {
+    margin: 30px
+  }
+  h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 200%;
+  }
+  div {
+    background-color: grey;
+    border: solid black;
+    width: 98%;
+    margin: 1%;
+  
+    float: left;
+  }
+  p {
+    float: right;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    font-size: 100%;
+    line-height: 40px;
+    margin-bottom: 10px;
+    border-left:  solid black;
+    border-bottom:  solid black;
+  }
+  #p1 {
+    background-color: pink;
+  }
+  #p2 {
+    background-color: rgb(179, 50, 50);
+  }
+  #p3 {
+    background-color: rgb(215, 215, 112);
+  }
+  
+  
+  section {
+    clear: both;
+    font-size: 80%;
+  }
+  /********** 992px and above **********/
+  /* each of the 3 sections should take up equal amount of space on the screen. As you make */
+  /* the browser window wider or narrower, each section should become wider or narrower. */
+  @media (min-width: 992px) {
+    div {
+      width: 31%;
+    }
+  }
+  
+  /********** between 768px and 991px, inclusively **********/
+  /* the first 2 sections should be in the first row and be of equal size. The 3rd */
+  /* section should be in the second row and take up the entire row by itself */
+  @media (min-width: 768px) and (max-width: 991px) {
+    #d1, #d2 {
+      width: 48%;  
+    } 
+    #d3 {
+      width: 98%;  
+    }
+  }
+  /********** equal to or less than 767px **********/
+  /* each section should take up the entire row. */
+  @media (max-width: 767px) {
+  /* solved by default */
+  }
